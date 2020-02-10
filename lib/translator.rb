@@ -3,10 +3,10 @@ require "yaml"
 
 def load_library(path)
   lib = YAML.load_file(path)
-  pp lib
+  #pp lib
   keys = {
-    get_meaning: lib.recude({}) | memo, (key,value) | memo[key] = value[1],
-    get_emoticon: lib
+    get_meaning: lib.reduce({}) | memo, (key,value) | memo[key] = value[1],
+    get_emoticon: lib.reduce({}) | memo, (key,value) | memo[key] = value[0]
   }
   keys
 end
