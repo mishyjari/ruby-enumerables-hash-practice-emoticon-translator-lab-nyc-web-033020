@@ -8,7 +8,7 @@ def load_library(path)
     get_meaning: lib.reduce({}) do | memo, (key,value) | 
        if !memo
          memo = {key => value[1]}
-       else 
+       end
          
        pp memo
        memo
