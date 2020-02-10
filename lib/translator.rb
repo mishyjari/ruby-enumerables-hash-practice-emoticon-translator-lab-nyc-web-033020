@@ -8,7 +8,7 @@ def load_library(path)
     get_meaning: lib.reduce({}) do | memo, (key,value) | memo[key] = value end,
  #   get_emoticon: lib.reduce({}) do | memo, (key,value) | memo[key] => value[0] end
   }
-  p keys[get_meaning]
+  #p keys[get_meaning]
   keys
 end
 
