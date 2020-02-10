@@ -5,7 +5,7 @@ def load_library(path)
   lib = YAML.load_file(path)
   #pp lib
   keys = {
-    get_meaning: lib.reduce({}) do | memo, (key,value) | memo[key] = nil end,
+    get_meaning: lib.reduce({}) do | memo, (key,value) | p key end,
     get_emoticon: nil#lib.reduce({}) do | memo, (key,value) | memo[key] = nil end
   }
   #p keys[get_meaning]
