@@ -7,7 +7,7 @@ def load_library(path)
   keys = {
     get_meaning: lib.reduce({}) do | memo, (key,value) | 
        memo[key] = value[1]
-       memo
+       pp memo
       end,
     get_emoticon: nil#lib.reduce({}) do | memo, (key,value) | memo[key] = nil end
   }
