@@ -8,6 +8,7 @@ def load_library(path)
     get_meaning: lib.reduce({}) do | memo, (key,value) | 
        memo[key] = value[1] if !memo
        pp memo
+       memo
       end,
     get_emoticon: nil#lib.reduce({}) do | memo, (key,value) | memo[key] = nil end
   }
