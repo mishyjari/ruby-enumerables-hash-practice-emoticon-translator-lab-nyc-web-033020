@@ -7,7 +7,7 @@ def load_library(path)
     get_meaning: lib,
     get_emoticon: lib
   }
-  pp keys[get_meaning]
+  p keys[get_meaning]
   keys
 end
 
