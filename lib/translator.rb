@@ -9,7 +9,7 @@ def load_library(path)
        if !memo
         memo = key
        else
-         memo[key] = value[1]
+         memo = value[1]
        end
          
        pp memo
