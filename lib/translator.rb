@@ -9,7 +9,7 @@ def load_library(path)
        if memo.length == 0
         memo[key] = value[1]
        else
-         #memo = value[1]
+        memo[key] << value[1]
        end
          
        pp memo
