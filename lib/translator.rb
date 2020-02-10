@@ -6,7 +6,7 @@ def load_library(path)
   #pp lib
   keys = {
     get_meaning: lib.reduce({}) do | memo, (key,value) | 
-       memo = value[1] if !memo[key]
+       memo = value[1]
        pp memo
        memo
       end,
