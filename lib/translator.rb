@@ -5,7 +5,7 @@ def load_library(path)
   lib = YAML.load_file(path)
   pp lib
   keys = {
-    get_meaning: lib,
+    get_meaning: lib.recude({}) | memo, (key,value) | memo[key] = value[1],
     get_emoticon: lib
   }
   keys
