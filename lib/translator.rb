@@ -6,13 +6,13 @@ def load_library(path)
   #pp lib
   keys = {
     get_meaning: lib.reduce({}) do | memo, (key,value) | 
-       if !memo
+       if memo
         memo = key
        else
          memo = value[1]
        end
          
-       pp memo
+       pp memo.count
        memo
       end,
     get_emoticon: nil#lib.reduce({}) do | memo, (key,value) | memo[key] = nil end
