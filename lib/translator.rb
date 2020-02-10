@@ -12,7 +12,7 @@ def load_library(path)
          memo = value[1]
        end
          
-       pp memo.count
+       pp memo.length
        memo
       end,
     get_emoticon: nil#lib.reduce({}) do | memo, (key,value) | memo[key] = nil end
