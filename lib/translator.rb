@@ -4,7 +4,7 @@ require "yaml"
 def load_library(path)
   lib = YAML.load_file(path)
   { 
-    get_meaning: lib,
+    get_meaning: lib[1],
     get_emoticon: lib
   }
 end
